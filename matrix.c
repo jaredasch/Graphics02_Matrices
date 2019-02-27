@@ -56,7 +56,7 @@ void matrix_mult(struct matrix *a, struct matrix *b) {
   struct matrix * result = new_matrix(a->rows, b->cols);
   for(int row = 0; row < b->rows; row++){
     for(int col = 0; col < b->lastcol; col++){
-      int val = 0;
+      double val = 0;
       //printf("row: %d, col: %d -- ", row, col);
       for(int i = 0; i < a->lastcol; i++){
 	//printf("%.1f * %.1f + ", a->m[i][col], b->m[row][i]);
